@@ -6,7 +6,7 @@ package:
 
 source:
   fn: python-snappy-{{ version }}.tar.gz
-  url: https://pypi.python.org/packages/source/p/python-snappy/python-snappy-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/p/python-snappy/python-snappy-{{ version }}.tar.gz
   md5: 0c06bbed70a8390b55a60f5ee79a27d2
 
 build:
