@@ -1,4 +1,4 @@
-{% set version = "0.5" %}
+{% set version = "0.5.1" %}
 
 package:
   name: python-snappy
@@ -7,7 +7,7 @@ package:
 source:
   fn: python-snappy-{{ version }}.tar.gz
   url: https://pypi.python.org/packages/source/p/python-snappy/python-snappy-{{ version }}.tar.gz
-  md5: 044fb0ac21888c0b4eee0c4f15e75504
+  md5: 0c06bbed70a8390b55a60f5ee79a27d2
 
 build:
     number: 0
