@@ -10,14 +10,15 @@ source:
   md5: 0c06bbed70a8390b55a60f5ee79a27d2
 
 build:
-    number: 0
+    number: 1
     skip: True  # [win]
 
 requirements:
   build:
     - python
-    - snappy
     - cmake
+    - snappy
+    - toolchain
   run:
     - python
     - snappy
@@ -35,3 +36,4 @@ about:
 extra:
   recipe-maintainers:
     - mariusvniekerk
+    - martindurant
