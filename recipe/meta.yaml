@@ -19,7 +19,6 @@ build:
 requirements:
   build:
     - python
-    - cmake
     - snappy 1.1.6|1.1.7
     - toolchain
   run:
