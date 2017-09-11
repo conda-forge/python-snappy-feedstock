@@ -27,7 +27,7 @@ requirements:
 
 test:
   imports:
-     - snappy
+    - snappy
 
 about:
   home: https://github.com/andrix/python-snappy
