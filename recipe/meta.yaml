@@ -14,22 +14,17 @@ source:
 build:
   number: {{ build }}
   script: CPATH="$PREFIX/include:$CPATH" LIBDIR="$PREFIX/lib" python setup.py install  # [unix]
-  script: python setup.py install  # [win and not py27]
-  script: python setup.py install --single-version-externally-managed --record record.txt  # [win and py27]
-  patches:
-    - force-cffi.patch  # [win and py27]
+  script: python setup.py install  # [win]
 
 requirements:
   build:
     - python
     - snappy 1.1.6|1.1.7
-    - toolchain  # [not (win and py27)]
-    - setuptools  # [win and py27]
-    - cffi        # [win and py27]
+    - toolchain
+    - msinttypes  # [win and py27]
   run:
     - python
     - snappy 1.1.6|1.1.7
-    - cffi  # [win and py27]
 
 test:
   imports:
