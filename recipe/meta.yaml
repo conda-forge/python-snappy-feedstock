@@ -10,6 +10,8 @@ source:
   fn: python-snappy-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/p/python-snappy/python-snappy-{{ version }}.tar.gz
   sha256: {{ sha256 }}
+  patches:
+    - msvc-inline.patch  # [win and py27]
 
 build:
   number: {{ build }}
