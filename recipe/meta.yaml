@@ -31,10 +31,12 @@ test:
      - snappy
 
 about:
-  home: http://github.com/andrix/python-snappy
-  license: BSD 3-clause
+  home: https://github.com/andrix/python-snappy
+  license: BSD-3-Clause
+  license_family: BSD
+  license_file: LICENSE
   summary: 'Python library for the snappy compression library from Google'
-
+  dev_url: https://github.com/andrix/python-snappy
 
 extra:
   recipe-maintainers:
