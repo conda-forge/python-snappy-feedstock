@@ -1,4 +1,6 @@
 {% set version = "0.5.1" %}
+{% set sha256 = "385fb216e7d1241f70c14c2bea3f042ec235caa65d708294f1ece50d3efa5de3" %}
+{% set build = 2 %}
 
 package:
   name: python-snappy
@@ -7,21 +9,22 @@ package:
 source:
   fn: python-snappy-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/p/python-snappy/python-snappy-{{ version }}.tar.gz
-  md5: 0c06bbed70a8390b55a60f5ee79a27d2
+  sha256: {{ sha256 }}
 
 build:
-    number: 1
-    skip: True  # [win]
+  number: {{ build }}
+  script: CPATH="$PREFIX/include:$CPATH" LIBDIR="$PREFIX/lib" python setup.py install  # [unix]
+  script: python setup.py install  # [win]
 
 requirements:
   build:
     - python
     - cmake
-    - snappy
+    - snappy 1.1.6|1.1.7
     - toolchain
   run:
     - python
-    - snappy
+    - snappy 1.1.6|1.1.7
 
 test:
   imports:
