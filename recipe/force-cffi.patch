@@ -1,0 +1,16 @@
+diff --git a/setup.py b/setup.py
+index aec5f65..6882f9d 100644
+--- a/setup.py
++++ b/setup.py
+@@ -42,7 +42,7 @@
+ packages = ['snappy']
+ install_requires = []
+ 
+-if 'PyPy' in sys.version:
++if True:
+     from setuptools import setup
+     ext_modules = []
+     install_requires = ['cffi']
+-- 
+1.9.1
+
