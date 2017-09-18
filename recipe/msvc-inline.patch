@@ -1,0 +1,29 @@
+From 044fa4fcada170cb540bc02976639cd3db000e89 Mon Sep 17 00:00:00 2001
+From: "Dougal J. Sutherland" <dougal@gmail.com>
+Date: Mon, 11 Sep 2017 23:29:13 +0100
+Subject: [PATCH] inline workaround
+
+---
+ snappy/crc32c.h | 6 ++++++
+ 1 file changed, 6 insertions(+)
+
+diff --git a/snappy/crc32c.h b/snappy/crc32c.h
+index 3534daa..415b7ff 100644
+--- a/snappy/crc32c.h
++++ b/snappy/crc32c.h
+@@ -19,6 +19,12 @@
+ #include <stdlib.h>
+ #include <stdint.h>
+ 
++#if defined(_MSC_VER) && !defined(__cplusplus)   /* Visual Studio */
++#ifndef inline
++#define inline __inline  /* Visual C is not C99, but supports some kind of inline */
++#endif
++#endif
++
+ #ifdef __cplusplus
+ extern "C" {
+ #endif
+-- 
+2.13.3
+
