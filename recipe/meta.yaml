@@ -10,10 +10,6 @@ source:
   fn: python-snappy-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/p/python-snappy/python-snappy-{{ version }}.tar.gz
   sha256: {{ sha256 }}
-  patches:
-    # Patch the C sources to handle inline in old versions of MSVC.
-    # Submitted upstream as https://github.com/andrix/python-snappy/pull/55
-    - msvc-inline.patch
 
 build:
   number: 0
