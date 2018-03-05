@@ -1,6 +1,5 @@
 {% set version = "0.5.2" %}
 {% set sha256 = "2ce83e44587adbc7239589048d660a92f899eb45af4e48e73092192a8b0f0789" %}
-{% set build = 2 %}
 
 package:
   name: python-snappy
