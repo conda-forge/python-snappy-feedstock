@@ -10,3 +10,6 @@ snappy:
 - 1.1.6
 target_platform:
 - win-32
+zip_keys:
+- - python
+  - c_compiler

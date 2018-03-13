@@ -13,18 +13,6 @@ environment:
 
     - CONFIG: appveyor_c_compilervs2008python2.7target_platformwin-64
 
-    - CONFIG: appveyor_c_compilervs2008python3.5target_platformwin-32
-
-    - CONFIG: appveyor_c_compilervs2008python3.5target_platformwin-64
-
-    - CONFIG: appveyor_c_compilervs2008python3.6target_platformwin-32
-
-    - CONFIG: appveyor_c_compilervs2008python3.6target_platformwin-64
-
-    - CONFIG: appveyor_c_compilervs2015python2.7target_platformwin-32
-
-    - CONFIG: appveyor_c_compilervs2015python2.7target_platformwin-64
-
     - CONFIG: appveyor_c_compilervs2015python3.5target_platformwin-32
 
     - CONFIG: appveyor_c_compilervs2015python3.5target_platformwin-64
