@@ -28,6 +28,19 @@ test:
   imports:
     - snappy
 
+outputs:
+  - name: {{ PKG_NAME }}
+    type: conda
+  - type: wheel
+    build:
+      activate_in_script: true
+    requirements:
+      build:
+        - python
+        - snappy 1.1.6|1.1.7
+        - toolchain
+        - msinttypes  # [win and py27]
+
 about:
   home: https://github.com/andrix/python-snappy
   license: BSD-3-Clause
