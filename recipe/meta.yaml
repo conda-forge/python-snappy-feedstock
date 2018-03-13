@@ -16,6 +16,8 @@ build:
 
 requirements:
   build:
+    - {{ compiler('c') }}  # [win]
+  host:
     - python
     - snappy 1.1.6|1.1.7
     - toolchain
@@ -36,6 +38,8 @@ outputs:
       activate_in_script: true
     requirements:
       build:
+        - {{ compiler('c') }}  # [win]
+      host:
         - python
         - snappy 1.1.6|1.1.7
         - toolchain
