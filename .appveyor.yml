@@ -9,17 +9,29 @@ environment:
     secure: ipv/06DzgA7pzz2CIAtbPxZSsphDtF+JFyoWRnXkn3O8j7oRe3rzqj3LOoq2DZp4
 
   matrix:
-    - CONFIG: appveyor_python2.7target_platformwin-32
+    - CONFIG: appveyor_c_compilervs2008python2.7target_platformwin-32
 
-    - CONFIG: appveyor_python2.7target_platformwin-64
+    - CONFIG: appveyor_c_compilervs2008python2.7target_platformwin-64
 
-    - CONFIG: appveyor_python3.5target_platformwin-32
+    - CONFIG: appveyor_c_compilervs2008python3.5target_platformwin-32
 
-    - CONFIG: appveyor_python3.5target_platformwin-64
+    - CONFIG: appveyor_c_compilervs2008python3.5target_platformwin-64
 
-    - CONFIG: appveyor_python3.6target_platformwin-32
+    - CONFIG: appveyor_c_compilervs2008python3.6target_platformwin-32
 
-    - CONFIG: appveyor_python3.6target_platformwin-64
+    - CONFIG: appveyor_c_compilervs2008python3.6target_platformwin-64
+
+    - CONFIG: appveyor_c_compilervs2015python2.7target_platformwin-32
+
+    - CONFIG: appveyor_c_compilervs2015python2.7target_platformwin-64
+
+    - CONFIG: appveyor_c_compilervs2015python3.5target_platformwin-32
+
+    - CONFIG: appveyor_c_compilervs2015python3.5target_platformwin-64
+
+    - CONFIG: appveyor_c_compilervs2015python3.6target_platformwin-32
+
+    - CONFIG: appveyor_c_compilervs2015python3.6target_platformwin-64
 
 
 # We always use a 64-bit machine, but can build x86 distributions
