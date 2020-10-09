@@ -14,3 +14,5 @@ python:
 - 3.8.* *_cpython
 snappy:
 - '1'
+target_platform:
+- win-64
