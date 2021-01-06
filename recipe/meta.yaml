@@ -1,9 +1,9 @@
-{% set version = "0.5.4" %}
-{% set sha256 = "d9c26532cfa510f45e8d135cde140e8a5603d3fb254cfec273ebc0ecf9f668e2" %}
+{% set version = "0.6.0" %}
+{% set sha256 = "168a98d3f597b633cfeeae7fe1c78a8dfd81f018b866cf7ce9e4c56086af891a" %}
 
 package:
   name: python-snappy
-  version: "{{ version }}"
+  version: {{ version }}
 
 source:
   fn: python-snappy-{{ version }}.tar.gz
@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 3
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -36,7 +36,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'Python library for the snappy compression library from Google'
+  summary: Python library for the snappy compression library from Google
   dev_url: https://github.com/andrix/python-snappy
 
 extra:
