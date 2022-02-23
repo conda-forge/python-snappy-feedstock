@@ -20,6 +20,8 @@ pin_run_as_build:
     max_pin: x.x
 python:
 - 3.8.* *_cpython
+python_impl:
+- cpython
 snappy:
 - '1'
 target_platform:
@@ -27,3 +29,5 @@ target_platform:
 zip_keys:
 - - c_compiler_version
   - cxx_compiler_version
+- - python
+  - python_impl
