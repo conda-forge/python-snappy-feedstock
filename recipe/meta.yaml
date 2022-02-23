@@ -24,11 +24,12 @@ requirements:
     - python
     - pip
     - snappy
-    - msinttypes  # [win and py27]
+    - msinttypes      # [win and py27]
+    - cffi >=1.15.0   # [python_impl == 'pypy']
   run:
     - python
     - snappy
-    - cffi 1.15  # [python_impl == 'pypy']
+    - cffi >=1.15.0   # [python_impl == 'pypy']
 
 test:
   imports:
