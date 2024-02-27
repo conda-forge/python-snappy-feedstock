@@ -1,5 +1,5 @@
-{% set version = "0.6.1" %}
-{% set sha256 = "b6a107ab06206acc5359d4c5632bd9b22d448702a79b3169b0c62e0fb808bb2a" %}
+{% set version = "0.7.0" %}
+{% set sha256 = "2396893821d9a362302e35b1c115b765f0df46f80e766570e424a99b9d256f53" %}
 
 package:
   name: python-snappy
@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
