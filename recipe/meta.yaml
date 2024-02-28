@@ -18,6 +18,8 @@ build:
 requirements:
   host:
     - python
+    - cramjam
+    - crc32c
     - pip
   run:
     - python >=3.8
