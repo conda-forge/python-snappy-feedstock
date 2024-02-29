@@ -30,6 +30,10 @@ requirements:
     - cramjam
 
 test:
+  requires:
+    - pip
+  commands:
+    - pip check
   imports:
     - snappy
 
