@@ -1,5 +1,5 @@
-{% set version = "0.6.1" %}
-{% set sha256 = "b6a107ab06206acc5359d4c5632bd9b22d448702a79b3169b0c62e0fb808bb2a" %}
+{% set version = "0.7.1" %}
+{% set sha256 = "1bc29d36211d44bb9f04f3d7ccfbaeaebbc2f62b6d40f4fc4edd1fb16bc52c13" %}
 
 package:
   name: python-snappy
@@ -11,8 +11,9 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
+  noarch: python
 
 requirements:
   build:
@@ -23,22 +24,26 @@ requirements:
   host:
     - python
     - pip
-    - snappy
+    - cramjam
   run:
-    - python
-    - snappy
+    - python >=3.8
+    - cramjam
 
 test:
+  requires:
+    - pip
+  commands:
+    - pip check
   imports:
     - snappy
 
 about:
-  home: https://github.com/andrix/python-snappy
+  home: https://github.com/intake/python-snappy
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
   summary: Python library for the snappy compression library from Google
-  dev_url: https://github.com/andrix/python-snappy
+  dev_url: https://github.com/intake/python-snappy
 
 extra:
   recipe-maintainers:
