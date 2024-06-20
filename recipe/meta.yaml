@@ -1,5 +1,5 @@
-{% set version = "0.7.1" %}
-{% set sha256 = "1bc29d36211d44bb9f04f3d7ccfbaeaebbc2f62b6d40f4fc4edd1fb16bc52c13" %}
+{% set version = "0.7.2" %}
+{% set sha256 = "04bf182f9d9f67b7a846dae2f1df36180ceeee8d3380e4b6799deff5272c4978" %}
 
 package:
   name: python-snappy
@@ -7,11 +7,11 @@ package:
 
 source:
   fn: python-snappy-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/p/python-snappy/python-snappy-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/p/python-snappy/python_snappy-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   noarch: python
 
