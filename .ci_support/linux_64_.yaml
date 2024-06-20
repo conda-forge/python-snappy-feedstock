@@ -13,4 +13,4 @@ pin_run_as_build:
 python:
 - 3.12.* *_cpython
 snappy:
-- '1'
+- '1.2'
