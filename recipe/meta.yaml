@@ -1,5 +1,5 @@
-{% set version = "0.7.2" %}
-{% set sha256 = "04bf182f9d9f67b7a846dae2f1df36180ceeee8d3380e4b6799deff5272c4978" %}
+{% set version = "0.7.3" %}
+{% set sha256 = "40216c1badfb2d38ac781ecb162a1d0ec40f8ee9747e610bcfefdfa79486cee3" %}
 
 package:
   name: python-snappy
@@ -19,6 +19,7 @@ requirements:
   host:
     - python
     - pip
+    - setuptools
     - cramjam
   run:
     - python >=3.8
