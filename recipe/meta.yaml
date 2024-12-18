@@ -7,27 +7,28 @@ package:
 
 source:
   fn: python-snappy-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/p/python-snappy/python_snappy-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/p/python-snappy/python_snappy-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   noarch: python
 
 requirements:
   host:
-    - python
+    - python {{ python_min }}
     - pip
     - setuptools
     - cramjam
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - cramjam
 
 test:
   requires:
     - pip
+    - python {{ python_min }}
   commands:
     - pip check
   imports:
